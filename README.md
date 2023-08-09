@@ -12,5 +12,5 @@
 你会在%desktop%/wimiso-master/wimiso/efi/下看到efi.img，请删除此目录下的boot文件夹
 4.生成
 ```
-(bash) mkisofs -o ventoy_wimboot.img -J -R /cygdrive/c/users/你的用户名/desktop/wimiso-master/wimiso
+(bash) mkisofs -no-emul-boot -boot-load-size 8 -b boot/etfsboot.com -o ventoy_wimboot.img -J -R /cygdrive/c/users/你的用户名/desktop/wimiso-master/wimiso
 ```
